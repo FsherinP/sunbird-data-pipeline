@@ -20,6 +20,27 @@ ingestion_kafka_overriden_topics:
     replication_factor: 1
 
 processing_kafka_overriden_topics:
+  - name: dashboards.user.course.progress
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.competency.frac
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.competency.course
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.competency.expected
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.competency.declared
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.competency.gap
+    retention_time: 172800000
+    replication_factor: 1
+  - name: dashboards.course.rating.summary
+    retention_time: 172800000
+    replication_factor: 1
   - name: analytics.job_queue
     retention_time: 172800000
     replication_factor: 1
@@ -152,6 +173,27 @@ processing_kafka_overriden_topics:
 
 
 processing_kafka_topics:
+  - name: dashboards.user.course.progress
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.competency.frac
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.competency.course
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.competency.expected
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.competency.declared
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.competency.gap
+    num_of_partitions: 2
+    replication_factor: 1
+  - name: dashboards.course.rating.summary
+    num_of_partitions: 2
+    replication_factor: 1
   - name: analytics.job_queue
     num_of_partitions: 1
     replication_factor: 1
