@@ -26,8 +26,9 @@ dashboards_course_rating_summary_topic: "{{ env }}.dashboards.course.rating.summ
 dashboards_cassandra_user_table: "user"
 dashboards_cassandra_user_content_consumption_table: "user_content_consumption"
 dashboards_cassandra_content_hierarchy_table: "content_hierarchy"
-dashboards_cassandra_rating_summary_table: "rating_summary"
+dashboards_cassandra_rating_summary_table: "ratings_summary"
 dashboards_frac_backend_host: "frac-dictionary-backend.igot-stage.in"
+#dashboards_frac_backend_host: "https://igot-dev.in/apis/protected/v8/frac/"
 
 
 job_manager_tmp_dir: "transient-data"
