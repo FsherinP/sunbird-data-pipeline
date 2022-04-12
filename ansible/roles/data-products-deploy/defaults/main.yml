@@ -46,8 +46,7 @@ dataset_metadata_table: "{{ env }}_dataset_metadata"
 report_user_table_keyspace: "sunbird_courses"
 report_user_enrolment_table: "report_user_enrolments"
 
-#analytics_job_list: '"wfs", "content-rating-updater", "monitor-job-summ"'
-analytics_job_list: '"wfs", "monitor-job-summ", "competency-gap"'
+analytics_job_list: '"wfs", "monitor-job-summ", "competency-metrics"'
 analytics_jobs_count: 3
 
 cassandra_keyspace_prefix: '{{ env }}_'
